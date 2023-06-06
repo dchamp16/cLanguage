@@ -4,12 +4,14 @@ using namespace std;
 
 int main()
 {
+
     string letters[2][2][2] = {
         {{"A", "B"},
          {"C", "D"}},
         {{"E", "F"},
          {"G", "H"}}};
     /*
+    letters[blue][yellow][inside yellow]
     letters[blue][yellow][inside yellow]
     letters[0][0][1] output : B
     letters[1][1][1] output : H
