@@ -4,28 +4,22 @@ using namespace std;
 
 int main()
 {
-    string letters[2][2][2] = {
-        {{"A", "B"},
-         {"C", "D"}},
-        {{"E", "F"},
-         {"G", "H"}}};
-    /*
-    letters[blue][yellow][inside yellow]
-    letters[0][0][1] output : B
-    letters[1][1][1] output : H
-    letters[1][0][0] output : E
-    */
-
-    for (int i = 0; i < 2; i++)
+    struct
     {
-        for (int j = 0; j < 2; j++)
-        {
-            for (int k = 0; k < 2; k++)
-            {
-                cout << "LETTERS[" << i << "][" << j << "][" << k << "] = " << letters[i][j][k] << "\n";
-            }
-        }
-    }
+        int num1, num2, num3;
+        string firstName, lastName, middleName;
+        bool isMale;
+    } person;
+
+    person.num1 = 22;
+    person.num2 = 10;
+    person.num3 = 33;
+    person.firstName = "Peter ";
+    person.firstName = "Ramos ";
+    person.middleName = "Guevara";
+    person.isMale = true;
+
+    cout << "Fullname: " << person.firstName << person.middleName << person.firstName << "Age: " << person.num3 << (person.isMale ? " Male" : " Female");
 
     return 0;
 }
