@@ -4,19 +4,10 @@ using namespace std;
 
 int main()
 {
-    // reference
-    int original = 10;
-    int &ref = original;
-    ref = 33;
-    original = 40;
-
-    cout << "original: " << original << " ref: " << ref << "\n";
-    // ----------------
-    string fName, lName;
-    fName = "Peter";
-    lName = "Ramos";
-    cout << "fName Address: " << &fName << " | "
-         << "lName Address: " << &lName;
-
+    string name = "Peter Ramos";
+    // pointer is a variable that you can store reference address
+    string *nameAddress = &name;
+    //------------
+    cout << "ptr: " << nameAddress << " &name: " << &name;
     return 0;
 }
