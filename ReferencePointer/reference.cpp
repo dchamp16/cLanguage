@@ -4,8 +4,9 @@ using namespace std;
 
 int main()
 {
-    // reference
+    // reference is like a nickname
     int original = 10;
+
     int &ref = original;
     ref = 33;
     original = 40;
