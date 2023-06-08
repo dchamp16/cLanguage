@@ -2,21 +2,32 @@
 #include <string>
 using namespace std;
 
-void printArray(int arr[], int size)
+/* return a added integer */
+int plusFunc(int x, int y)
 {
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
+    return x + y;
 }
 
-// main
+/* return a added double */
+double plusFunc(double x, double y)
+{
+    return x + y;
+}
+
+/* return a concatenate string */
+string plusFunc(string x, string y)
+{
+    return x + y;
+}
+
+/* MAIN */
 int main()
 {
-    int myArray[] = {1, 2, 3, 4, 5};
-    int length = sizeof(myArray) / sizeof(myArray[0]);
-
-    printArray(myArray, length);
+    int myNum1 = plusFunc(8, 5);
+    double myNum2 = plusFunc(4.3, 6.26);
+    string myNum3 = plusFunc("6", "30");
+    cout << "Int: " << myNum1 << "\n";
+    cout << "Double: " << myNum2 << "\n";
+    cout << "String: " << myNum3;
     return 0;
 }
