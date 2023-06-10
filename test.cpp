@@ -2,22 +2,33 @@
 #include <string>
 using namespace std;
 
-int factorial(int n)
+// int recurse(int num)
+// {
+//     if (num >= 5)
+//     {
+//         return num;
+//     }
+//     else
+//     {
+//         num++;
+//         cout << num << endl;
+//         recurse(num);
+//     }
+// }
+
+void loopFoo(int num)
 {
-    if (n == 0 || n == 1)
+    int i = num;
+    while (i <= 5)
     {
-        return 1;
-    }
-    else
-    {
-        return n * factorial(n - 1);
+
+        i++;
+        cout << i << endl;
     }
 }
 
 int main()
 {
-    int number = 5;
-    int result = factorial(number);
-    cout << "Factorial of " << number << " is: " << result << endl;
+    loopFoo(0);
     return 0;
 }
