@@ -36,11 +36,5 @@ int main()
     std::cout << "/= " << prob1.divide() << "\n";
     std::cout << "-= " << prob1.minus() << "\n";
     std::cout << "*= " << prob1.multi() << "\n";
-
-    // int num = 32;
-    // const int &ref = num;
-
-    // std::cout << num << "\t" << foo(num) << "\n";
-    // std::cout << num << "\t" << ref;
     return 0;
 }
